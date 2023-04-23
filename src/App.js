@@ -1,6 +1,6 @@
 import Layout from './components/layout/Layout'
 import Home from './pages/Home'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Video from './pages/Video'
 
 const App = () => {

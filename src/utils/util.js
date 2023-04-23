@@ -1,12 +1,12 @@
 import axios from 'axios'
-import { API_URL } from '../constants/AppConstants'
 
+const API_URL = 'http://localhost:9000'
 export const redirectTo = (url) => {
 	window.location.replace(url)
 }
 export function callApi(endpoint, config) {
 	return axios({
-		url: `${API_URL}/api${endpoint}`,
+		url: `${API_URL}${endpoint}`,
 		withCredentials: true,
 		...config,
 	})
